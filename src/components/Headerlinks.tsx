@@ -11,7 +11,7 @@ const Headerlinks = () => {
     <div className="hidden md:inline-flex gap-7">
       {headerData?.map((i) => (
         <Link
-          key={i?.id}
+          key={i?.title}
           href={i?.href}
           className={`hover:text-green-500 hoverEffect relative group text-green-900 font-medium ${pathName === i?.href && "text-green-500"}`}
         >

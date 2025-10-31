@@ -26,6 +26,7 @@ const Sidebarmenu: FC<SidebarmenuProps> = ({ isOpen, onClose }) => {
         isOpen ? "translate-x-0" : "-translate-x-full"
       }`}
       ref={sidebarRef}
+      onClick={onClose}
     >
       <div className="w-2/3 bg-black h-screen text-white p-4">
         <div className="flex justify-between items-center">
